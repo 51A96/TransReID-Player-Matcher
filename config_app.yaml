@@ -1,11 +1,13 @@
 MODEL:
-  CONFIG_FILE: path/to/config/file
-  WEIGHT: path/to/weights
-  DEVICE: device_name
+  CONFIG_FILE: "configs/BallShow/vit_transreid_stride.yml"
+  WEIGHT: "logs/BallShow_vit_transreid_stride/transformer_120.pth"
+  DEVICE: "cuda"
+
 DATA:
-  TRAIN_DIR: path/to/train/dir
-  IMG_SIZE: [height, width]
+  TRAIN_DIR: "E:\\BaiduNetdiskDownload\\BallShow-ReID\\bounding_box_train"
+  IMG_SIZE: [224, 224]
+
 OUTPUT:
-  FEATURES_DIR: path/to/features/dir
-  TOP_K_DEFAULT: default_value
-  SIMILARITY_THRESHOLD: threshold_value
+  FEATURES_DIR: "app_features"
+  TOP_K_DEFAULT: 5
+  SIMILARITY_THRESHOLD: 0.5
