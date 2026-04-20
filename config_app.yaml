@@ -1,0 +1,11 @@
+MODEL:
+  CONFIG_FILE: path/to/config/file
+  WEIGHT: path/to/weights
+  DEVICE: device_name
+DATA:
+  TRAIN_DIR: path/to/train/dir
+  IMG_SIZE: [height, width]
+OUTPUT:
+  FEATURES_DIR: path/to/features/dir
+  TOP_K_DEFAULT: default_value
+  SIMILARITY_THRESHOLD: threshold_value
