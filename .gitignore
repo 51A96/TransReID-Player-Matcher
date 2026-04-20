@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual Environment
+.env
+.venv/
+venv/
+ENV/
+
+# Cache directories
+*.egg-info/
+*.eggs/
+.cache/
+
+# App features - indices
+app_features/*.idx
+app_features/*.json
+
+# Local configuration overrides
+config_override.py
